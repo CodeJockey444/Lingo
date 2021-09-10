@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Norican&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
+
+:root {
+  --normal-font-family: 'Cabin', sans-serif;
+  --unix-font-family: "Norican", cursive;
+  --background-color: #a4508b;
+  --background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+}
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.darkBg {
+  background-color: rgb(46, 45, 45);
+  color: white;
+}
+.pbg {
+  background-color: #5f0a87;
+}
+body::-webkit-scrollbar {
+  width: 10px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: black; /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #a40deb; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: var(--background-color); /* creates padding around scroll thumb */
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+.display-1 {
+  font-family: var(--unix-font-family);
+  font-size: 10em;
+}
+.display-2 {
+  font-family: var(--unix-font-family);
+  font-size: 3em;
+}
+p,.p {
+  font-family: var(--normal-font-family);
+  font-size: 1.4em;
+}
+.p{
+  font-size: 2.2em;
+}
+.color,
+.banner {
+  background-color: #5f0a87;
+}
+.banner {
+  height: 45vh;
+}
+.core{
+  border-radius: 10px;
+}
+.btn-lg {
+  font-family: var(--normal-font-family);
+}
+.i {
+  color: #5f0a87;
+  font-size: 1.85em;
+  padding: 0.2rem;
+}
+.centered-div {
+  display: grid;
+  place-content: center;
+}
+@media (max-width: 500px) {
+  .display-1 {
+    font-size: 4em;
+  }
+  .p{
+    font-size: 1.2;
+  }
+}
