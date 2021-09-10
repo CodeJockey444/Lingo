@@ -1,13 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, } from "react";
 
 const Navbar = ({ audio, DarkStatus }) => {
   const [Dark, setDark] = useState(false);
   const [Liked, setLiked] = useState(false);
-  useEffect(() => {
-    if (Liked) {
-      audio("Thank you");
-    }
-  }, [Liked]);
 
   const handleDark = (e) => {
     e.preventDefault();
@@ -17,6 +12,9 @@ const Navbar = ({ audio, DarkStatus }) => {
   const handleLike = (e) => {
     e.preventDefault();
     setLiked(!Liked);
+    if (Liked) {
+      audio("Thank you");
+    }
   };
   return (
     <nav className="navbar navbar-expand-sm  justify-content-end p-2">
@@ -30,7 +28,7 @@ const Navbar = ({ audio, DarkStatus }) => {
             }}
           >
             <i
-              className={Dark ?  `bi bi-cloud-sun i` :`bi bi-cloud-moon-fill i`}
+              className={Dark ? `bi bi-cloud-sun i` : `bi bi-cloud-moon-fill i`}
             ></i>
           </a>
         </li>
