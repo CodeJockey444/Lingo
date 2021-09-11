@@ -5,7 +5,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Core from "./core";
 
-const Dictionary = () => {
+const Dictionary = ({audio}) => {
+
   const [Search, setSearch] = useState("");
   let [globalData, setGlobalData] = useState([]);
   const handleSearch = (e) => {
@@ -52,7 +53,7 @@ const Dictionary = () => {
       </form>
       <div data-aos="fade-up">
         {globalData.length !== 0 ? (
-          <Core data={globalData}/>
+          <Core data={globalData} audio={audio} val={Search}/>
         ) : (
           <SearchSVG
             className="img-fluid mx-auto d-block"

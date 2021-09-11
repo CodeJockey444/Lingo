@@ -16,7 +16,7 @@ const About = () => {
           <p>
             With Lingo you can immediately find meanings and even learn how to pronounce it(a web app built for tablets and computers in design).A big shout out to <a href="https://dictionaryapi.dev/">Dictionary API</a> for the database and <a href="https://github.com/CodeJockey444/Lingo/blob/master/LICENSE">MIT</a>(for the license).Without them this web application would'nt really have been possible.
           </p>
-          <a className="btn btn-block text-white pbg" href="#dictionary">Go</a>
+          <a className="btn btn-block btn-lg text-white pbg" href="#dictionary">Go</a>
         </div>
         <div className="col-sm-12 col-lg-6 p-4" data-aos="fade-left">
           <SVG className="img-fluid" />

@@ -1,7 +1,7 @@
 import React, { useState, } from "react";
 
 const Navbar = ({ audio, DarkStatus }) => {
-  const [Dark, setDark] = useState(false);
+  const [Dark, setDark] = useState(true);
   const [Liked, setLiked] = useState(false);
 
   const handleDark = (e) => {
@@ -12,7 +12,7 @@ const Navbar = ({ audio, DarkStatus }) => {
   const handleLike = (e) => {
     e.preventDefault();
     setLiked(!Liked);
-    if (Liked) {
+    if (Liked===false) {
       audio("Thank you");
     }
   };
